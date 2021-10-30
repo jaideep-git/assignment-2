@@ -1,23 +1,78 @@
-# ignore everything in the root except the "wp-content" directory.
-!wp-content/
+<!doctype html>
+<html class="no-js" lang="en">
 
-# ignore everything in the "wp-content" directory, except:
-# "mu-plugins", "plugins", "themes" directory
-wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAIDEEP</title>
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
 
-# ignore these plugins
-wp-content/plugins/hello.php
+<body>
 
-# ignore specific themes
-wp-content/themes/twenty*/
+    <div class="header">
+        <main class="grid-container">
+            <header class="grid-x grid-padding-x">
+                <div class="large-4 small-12 cell">
+                    <div class="callout gray splash">
+                        <h1>MMDB</h1>
+                    </div>
+                </div>
+                <div class="large-4 small-8 cell">
+                    <div class=" gray">
+                        <input type="text" id="search" value="" placeholder="Search">
+                    </div>
+                </div>
+            </header>
+        </main>
+    </div>
 
-# ignore node dependency directories
-node_modules/
+    <main id="app" class="grid-container">
+        <article class="grid-x grid-padding-x splash hideAll">SPLASH PAGE</article>
+        <article class="grid-x grid-padding-x movie hideAll">MOVIE PAGE</article>
+        <article class="grid-x grid-padding-x people hideAll">PEOPLE PAGE</article>
+    </main>
 
-# ignore log files and databases
+
+
+    <script src="assets/js/vendor.js"></script>
+
+    <script src="assets/js/foundation.js"></script>
+    <script src="assets/js/sammy.min.js" type="text/javascript"></script>
+    <script src="assets/js/sammy.template.js" type="text/javascript"></script>
+    <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
+
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+#Debug files
 *.log
 *.sql
-*.sqlite
+
+#Wordpress standard files/folders
+uploads
+upgrade
+
+#wordpress-plugin-folders
+plugins/current-template-files
+plugins/gutenberg
+
+# SRC files/folders
+node_modules
+
+
