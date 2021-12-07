@@ -20,9 +20,10 @@
 	
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<h3>Recent Posts</h3>
+		<h3 class="recent-posts">Recent Posts</h3>
 	<?php
-	if ( is_page_template('template-about.php')){
+
+	if ( is_page_template('custom.php')){
 	$test_args = array( 
         'post_type' => 'post',         
         'post_status'=> 'publish',         
@@ -33,12 +34,15 @@
     if($test_query->have_posts()){         
         while ($test_query->have_posts()){             
             $test_query->the_post();                  
-            the_post_thumbnail( $size = ["300px","500px"], $attr = '' );       
-            the_title();             
+            the_post_thumbnail( $size = ["300px","500px"], $attr = '' );      
+			?> 
+			<h3><a class="movie-page" href="<?php the_permalink() ?>"><?php the_title()?></a></h3>
+			<?php   
             the_excerpt();              
         }               
     } 
 }
+
 
 
 if ( is_front_page()){
@@ -51,8 +55,12 @@ if ( is_front_page()){
     
     if($test_query->have_posts()){         
         while ($test_query->have_posts()){             
-            $test_query->the_post();                  
-            the_post_thumbnail( $size = ["300px","500px"], $attr = '' );       
+            $test_query->the_post();  
+			the_post_thumbnail( $size = ["300px","500px"], $attr = '' ); 
+			?>
+			<h3><a class="movie-title-home" href="<?php the_permalink() ?>"><?php the_title()?></a></h3>     
+			<?php           
+        
             the_title();             
             the_excerpt();              
         }               
