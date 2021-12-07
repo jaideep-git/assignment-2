@@ -1,0 +1,97 @@
+/*
+ Theme Name:   showtime
+ Theme URI:    http://jaideep.com/
+ Description:  Twenty Twenty one Child Theme
+ Author:      Jaideep 
+ Author URI:   http://jaideep.com/
+ Template:     twentytwentyone
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  showtime
+*/
+.myhead1{
+    color:#082567;
+}
+
+.myhead2{
+    color:#082567;
+}
+
+.head3{
+    color:#082567;
+}
+
+.homeImage{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.wp-block-social-links, .wp-block-social-links.has-normal-icon-size {
+    font-size: 30px;
+}
+
+.wp-block-button{
+    background-color: tomato;
+}
+
+.wp-block-social-link-anchor{
+    color:white;
+}
+
+.logo{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.about-button{
+    background-color:tomato;
+}
+
+.link1{
+    color:tomato
+}
+
+.find-us{
+    font-size: 35px;
+    font-weight: 500;
+    color:#082567;
+}
+
+.movie-title-home{
+    color:#082567;
+}
+
+.top-margin{
+    margin-top: 15px;
+}
+
+.head-3{
+    color:tomato
+}
+
+.entry-title{
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.site-description{
+    font-size: 30px;
+    color:black;
+}
+
+.recent-posts{
+    font-weight: 400;
+    font-size: 40px;
+
+}
+.share-facebook .sd-button .share-icon{
+    color: slategray;
+}
+
+h2{
+    font-size: 35px;
+}
+
+.movie-page{
+    color:#082567;
+}
