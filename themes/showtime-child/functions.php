@@ -9,10 +9,14 @@
  * @since Twenty Twenty-One 1.0
  */
 
+
+
 add_action( 'wp_enqueue_scripts', 'my_plugin_add_stylesheet' );
 function my_plugin_add_stylesheet() {
     wp_enqueue_style( 'my-style', get_stylesheet_directory_uri() . '/style.css', false, '1.0', 'all' );
 }
+
+
 
 function showTimeTheme_enqueue_scripts() {
     $parenthandle = 'twentytwentyone-style'; // This is 'twentytewntyone-style' for the perfect theme.
